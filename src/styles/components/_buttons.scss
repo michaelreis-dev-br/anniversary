@@ -1,0 +1,30 @@
+@use "../variables";
+
+.button {
+  padding: 12px;
+  font-size: 18px;
+  font-weight: bold;
+  text-decoration: none;
+  text-align: center;
+  white-space: nowrap;
+
+  &--primary {
+    color: variables.$primaryTextColor;
+    background-color: #4f29c2;
+    transition: 200ms ease-out;
+  }
+
+  &--primary:hover {
+    background-color: #8c70e1;
+  }
+
+  @media (max-width: 640px) {
+    display: block;
+    width: 100%;
+  }
+
+  @media (max-width: 1024px) {
+    display: flex;
+    align-items: center;
+  }
+}
